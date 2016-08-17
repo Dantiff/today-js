@@ -1,0 +1,9 @@
+/*Borders of fields for validation and indication*/
+input:invalid{
+    box-shadow: 0 0 2px .5px red;
+}
+textarea:invalid{
+    box-shadow: 0 0 2px .5px red;
+}
+/*Spacing around fields this is in place of <br>*/
+label{display: block; padding-top: 5px}
