@@ -26,8 +26,8 @@ window.onload = function ()
 return new Promise(function(resolve, reject) {
 var imager = document.getElementById("imager");
 
-imager.addEventListener('load', alertVal();
-        function alertVal(){
+imager.addEventListener('load', resolve();
+        function resolve(){
             if (imager.complete) {
               function loaded(
                   alert("Image loaded");
@@ -39,7 +39,7 @@ imager.addEventListener('load', alertVal();
             }
 
 
-imager.addEventListener('error', function reply() {
+imager.addEventListener('error', function reject() {
   alert("argh everything's broken");
 });
 }
