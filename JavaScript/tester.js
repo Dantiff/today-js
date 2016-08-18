@@ -1,7 +1,7 @@
 window.onload = function ()
 {
   var name =document.getElementById("name");
-  name.addEventListener("blur", alertVal);
+  name.addEventListener("blur", alertVal();
   function alertVal(){
   alert(name.value+" was added ");
   }
@@ -20,5 +20,29 @@ window.onload = function ()
                   }
     }
   });
+
+/*Testing promises*/
+
+return new Promise(function(resolve, reject) {
+var imager = document.getElementById("imager");
+
+imager.addEventListener('load', alertVal();
+        function alertVal(){
+            if (imager.complete) {
+              function loaded(
+                  alert("Image loaded");
+                );
+            }
+            else {
+              imager.addEventListener('load', loaded());
+            }
+            }
+
+
+imager.addEventListener('error', function reply() {
+  alert("argh everything's broken");
+});
+}
+
 
 }
